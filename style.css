@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
@@ -15,4 +16,23 @@ body {
 .sidebar {
   background-color: lightblue;
   grid-row: span 2;
+}
+
+.header {
+  display:grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.sidebar-item:hover{
+  font-weight: bold;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr 2fr;
+}
+
+.header-main {
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr 2fr 2fr;
 }
