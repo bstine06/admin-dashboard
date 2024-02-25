@@ -54,9 +54,44 @@ body {
   grid-template-columns: 6fr 1fr 1fr 2fr;
 }
 
+.header-greeting {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.header-greeting > * {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header-greeting > .name {
+  font-size: 3em;
+}
+
 .header-main {
   display: grid;
-  grid-template-columns: 1fr 5fr 2fr 2fr 2fr;
+  grid-template-columns: 1fr 5fr 4fr;
+}
+
+.header-items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-item {
+  background-color: hotpink;
+  color: black;
+  border-radius: 20px;
+  max-width: 5em;
+  height: 2em;
+  border: 4px solid #666;
+}
+
+.header-item:hover {
+  background-color: rgb(255, 136, 196);
+  border: 5px solid white;
 }
 
 .main-content {
