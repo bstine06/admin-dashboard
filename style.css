@@ -29,8 +29,24 @@ body {
   grid-template-rows: 1fr 2fr;
 }
 
+.sidebar-item {
+  margin:12px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 1.5em;
+  max-height: 1.5em;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 .sidebar-item:hover{
-  font-weight: bold;
+  text-decoration: underline;
+  background-color: #444;
+}
+
+.sidebar-title {
+  font-size: 2em;
 }
 
 .header-top {
@@ -101,4 +117,30 @@ body {
 .project-title {
   font-size: 1.2em;
   margin: auto;
+}
+
+.filter-invert {
+  filter: invert(100%);
+}
+
+.icon-large {
+  width: 50px;
+}
+
+.icon-medium {
+  width: 20px;
+}
+
+.pfp-small {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px white solid;
+}
+
+.pfp-medium {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px white solid;
 }
