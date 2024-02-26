@@ -158,6 +158,12 @@ body {
   margin: auto;
 }
 
+.project-footer {
+  display:grid;
+  grid-template-columns: 40px 40px 40px;
+  float: right;
+}
+
 .filter-invert {
   filter: invert(100%);
 }
@@ -182,4 +188,13 @@ body {
   height: 80px;
   border-radius: 50%;
   border: 4px white solid;
+}
+
+.icon-btn {
+  padding: 5px;
+}
+
+.icon-btn:hover {
+  background-color: #999;
+  border-radius: 5px;
 }
