@@ -27,6 +27,7 @@ body {
 .header {
   display:grid;
   grid-template-rows: 1fr 2fr;
+  border-bottom: 2px solid #333;
 }
 
 .sidebar-item {
@@ -103,7 +104,7 @@ body {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 3em 1fr 3em 1fr;
   overflow-y:auto;
-  gap: 20px;
+  column-gap: 20px;
 }
 
 .projects-container {
@@ -197,4 +198,24 @@ body {
 .icon-btn:hover {
   background-color: #999;
   border-radius: 5px;
+}
+
+.main-content-section-header {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.announcements-container {
+  display: grid;
+  grid-template-rows: 6em 6em 6em;
+  gap: 0;
+  background-color:#333;
+  padding: 12px;
+  border-radius: 10px;
+  align-items: stretch;
+}
+
+.announcement-title {
+  font-size: 1.2em;
+  margin: 0;
 }
